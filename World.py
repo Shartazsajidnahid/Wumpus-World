@@ -80,8 +80,8 @@ class World():
                     
                 if self.__board[self.__agentX][self.__agentY].pit or self.__board[self.__agentX][self.__agentY].wumpus:
                     self.__score -= 1000
-                    if self.__debug:
-                        self.__printWorldInfo()
+                    # if self.__debug:
+                    #     self.__printWorldInfo()
                     return self.__score
                 
             elif self.__lastAction == Agent.Action.SHOOT:
@@ -127,8 +127,8 @@ class World():
                 if self.__agentX == 0 and self.__agentY == 0:
                     if self.__goldLooted:
                         self.__score += 1000
-                    if (self.__debug):
-                        self.__printWorldInfo()
+                    # if (self.__debug):
+                    #     self.__printWorldInfo()
                     return self.__score;
         return self.__score
     # def __addFeatures ( self, file = None ):
