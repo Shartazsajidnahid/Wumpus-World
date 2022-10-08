@@ -1,5 +1,7 @@
 from Agent import Agent
 
+
+#test
 class MyAI ( Agent ):
 
     def __init__ ( self ):
